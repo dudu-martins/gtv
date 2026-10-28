@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("node:path");
 const fs = require("node:fs");
 
-function createAddon({ publicUrl = process.env.PUBLIC_URL || "http://127.0.0.1:" + (process.env.PORT || "7000") } = {}) {
+function createAddon({ publicUrl = process.env.PUBLIC_URL || "https://gtv-d1pm.onrender.com:" + (process.env.PORT || "7000") } = {}) {
   const PUBLIC_URL = publicUrl.replace(/\/+$/, "");
   const parsed = new URL(PUBLIC_URL);
   if (!["http:", "https:"].includes(parsed.protocol) || parsed.search || parsed.hash || parsed.username || parsed.password) {
