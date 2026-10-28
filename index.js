@@ -20,8 +20,8 @@ function createAddon({ publicUrl = process.env.PUBLIC_URL || "https://gtv-d1pm.o
     resources: ["catalog", "meta", "stream"], types: ["tv"],
     idPrefixes: ["cam4:", "stripchat:"],
     catalogs: [
-      { type: "tv", id: "cam4br", name: "CAM4 Brasil", extra: [{ name: "search" }, { name: "skip" }] },
-      { type: "tv", id: "stripchatbr", name: "Stripchat Brasil", extra: [{ name: "search" }, { name: "skip" }] }
+      { type: "tv", id: "cam4br", name: "CAM4 Brasil - G-TV", extra: [{ name: "search" }, { name: "skip" }] },
+      { type: "tv", id: "stripchatbr", name: "Stripchat Brasil - G-TV", extra: [{ name: "search" }, { name: "skip" }] }
     ],
     behaviorHints: { adult: true }
   };
