@@ -66,7 +66,7 @@ function createAddon({ publicUrl = process.env.PUBLIC_URL || "https://gtv-d1pm.o
 }
 if (require.main === module) {
   const { app } = createAddon();
-  const port = Number(process.env.PORT) || 7000;
+  const port = Number(process.env.SERVER_PORT || process.env.PORT) || 7000;
   app.listen(port, "0.0.0.0", () => {
     console.log("G-TV na porta " + port);
     console.log("PUBLIC_URL: " + (process.env.PUBLIC_URL || "http://127.0.0.1:" + port));
